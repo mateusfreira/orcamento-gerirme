@@ -3,8 +3,14 @@
     <item
         android:id="@+id/save"
         android:orderInCategory="100"
-        
+
         android:showAsAction="always"
         android:title="Salvar"/>
+    <item
+        android:id="@+id/remove"
+        android:orderInCategory="100"
+
+        android:showAsAction="always"
+        android:title="Remove"/>
 
 </menu>

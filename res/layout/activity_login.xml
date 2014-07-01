@@ -10,6 +10,13 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher" />
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
     <EditText
         android:id="@+id/user_name"
         android:layout_width="match_parent"
