@@ -1,6 +1,8 @@
 package com.gerime.activity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -58,7 +60,7 @@ public class RegisterActivity extends Activity {
                 result = true;
                 break;
             case R.id.remove:
-                EntityManager.getSqlAdapter().delete(accountMoviment);
+                removeAccount();
                 result = true;
                 break;
             default:
@@ -66,6 +68,20 @@ public class RegisterActivity extends Activity {
         }
         return result;
 
+    }
+
+    private void removeAccount() {
+        new AlertDialog.Builder(this)
+                .setMessage(getString(R.string.confirme_remove_account))
+                .setCancelable(false)
+                .setPositiveButton(getString(R.string.yes), new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        EntityManager.getSqlAdapter().delete(accountMoviment);
+                        finish();
+                    }
+                })
+                .setNegativeButton(getString(R.string.no), null)
+                .show();
     }
 
     private void saveAccount() {

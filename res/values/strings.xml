@@ -2,6 +2,9 @@
 <resources>
 
     <string name="app_name">Orçamento - Gerir-ME</string>
+    <string name="confirme_remove_account">Tem certeza que deseja excluir este lançamento?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Este é um sistema feito para pessoas praticas que gostão de se planejar sem a necessidade de perder tempo todos dias lançando cada gasto.
 				\n Sua idéia consiste em você colocar uma estimativa de seus gastos e  ganhos, assim sempre que for adquirir algo que saia do padrão de suas contas pode consultar e ver se cabe ou não no orçamento.
